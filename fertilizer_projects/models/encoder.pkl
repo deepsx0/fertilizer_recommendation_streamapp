@@ -1,0 +1,11 @@
+import pickle
+
+label_encoders = {
+    'Soil Type': soil_encoder,
+    'Crop Type': crop_encoder,
+    'Fertilizer Name': fertilizer_encoder
+}
+
+with open("models/encoders.pkl", "wb") as f:
+    pickle.dump(label_encoders, f)
+
